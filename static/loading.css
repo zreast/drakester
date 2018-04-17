@@ -1,0 +1,87 @@
+html {
+	height: 100vh;
+}
+
+body {
+	background-color: #B29558; 
+	height: 100vh;
+}
+.paw {
+	width: 100%;
+	height: 240px;
+}
+.paw > img {
+	width: 100px;
+	height: 100px;
+	opacity: 0;
+	margin: 20px;
+	display: inline-block;
+	transform: rotate(90deg);
+	position: relative;
+}
+.paw > .paw-left-1 {
+	animation: walking 5s 0s infinite;
+}
+.paw > .paw-right-1 {
+	top: 100px;
+	animation: walking 5s 1s infinite;
+}
+.paw > .paw-left-2 {
+	animation: walking 5s 2s infinite;
+}
+.paw > .paw-right-2 {
+	top: 100px;
+	animation: walking 5s 3s infinite;
+}
+.paw-sm {
+	height: 150px !important;
+}
+.paw-sm > img {
+	width: 50px !important;
+	height: 50px !important;
+}
+.paw-sm > .paw-right-1 {
+	top: 50px;
+}
+.paw-sm > .paw-right-2 {
+	top: 50px;
+}
+@keyframes walking {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1.0;
+	}
+	60% {
+		opacity: 0;
+	}
+}
+
+#paw-loading {
+	margin: auto;
+	margin-top: 25vh;
+	width: 800px;
+	height: 400px;
+}
+
+#paw-loading > .paw >img {
+	width: 150px;
+	height: 150px;
+	margin: 20px;
+}
+
+#paw-loading > .paw > .paw-right-1 {
+	top: 150px;
+}
+
+#paw-loading > .paw > .paw-right-2 {
+	top: 150px;
+}
+
+@media only screen and (max-width: 992px) {
+	body {
+		background-color: #C9B7A4;
+	}
+}
+
